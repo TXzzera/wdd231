@@ -1,0 +1,72 @@
+ /* Larger screen styles */
+ @media screen and (min-width: 768px) {
+
+  header {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header img {
+    width: 150px;
+    margin: 0;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 20px;
+
+  }
+
+  nav a {
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+  }
+
+.top-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.left {
+  flex: 2;
+}
+.right {
+  flex: 1;
+}
+
+
+.above{
+  margin-top: 2rem;
+}
+
+  .certificates {
+    justify-content: center;
+  }
+
+  .certificate-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .certificate-list p {
+    width: 100%;
+    text-align: center;
+  }
+}
