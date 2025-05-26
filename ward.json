@@ -1,0 +1,28 @@
+{
+    "family_name": "Teixeira",
+    "date_moved": "2025-03-30",
+    "number_of_people": 4,
+    "bishoric_visit": false,
+    "individuals":[
+        {
+            "name": "Alice Teixeira",
+            "gender": "female",
+            "birthdate": "1990-05-15"
+        },
+        {
+            "name": "Bob Teixeira",
+            "gender": "male",
+            "birthdate": "1990-08-22"
+        },
+        {
+            "name": "Charlie Teixeira",
+            "gender":"male",
+            "birthdate": "2015-11-10"
+        },
+        {
+            "name": "Daisy Teixeira",
+            "gender":"female",
+            "birthdate": "2018-02-05"
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "QuiroHouse",
+    "address": "Nações Unidas Avenue,585 - São Paulo, SP, 04578-000",
+    "phone-number": "(11) 0000-2524",
+    "website": "https://www.quirohouse.com.br",
+    "icon":"quirohouse.png",
+    "membership-level": 1,
+    "segment": "Health & Wellness"
+  },
+{
+        "name": "Buy Easy",
+        "address": "Paulista Avenue, 1578 - São Paulo, SP, 01310-200",
+        "phone-number": "(11) 0000-1234",
+        "website": "https://buyeasy.com.br",
+        "icon":"buyeasy.png",
+        "membership-level": 3,
+        "segment": "Grocery & bakery"
+    },
+    {
+        "name": "Karaoke SP",
+        "address": "Consolação Street, 1234 - São Paulo, SP, 01301-000",
+        "phone-number": "(11) 0000-5678",
+        "website": "https://www.spkaraoke.com.br",
+        "icon":"karaoke.png",
+        "membership-level": 1,
+        "segment": "Entertainment"
+    },
+    {
+        "name": "Rei do Hamburguer",
+        "address": "Augusta Street, 456 - São Paulo, SP, 01305-000",
+        "phone-number": "(11) 0000-9876",
+        "website": "https://reidohamburguer.com.br",
+        "icon":"rei-do-hamburguer.png",
+        "membership-level": 2,
+        "segment": "Fast Food"
+    },
+    {
+        "name": "New Soccer Society",
+        "address": "XV de Novembro Street, 789 - São Paulo, SP, 01010-000",
+        "phone-number": "(11) 0000-4321",
+        "website": "https://nssociety.com.br",
+        "icon":"society.png",
+        "membership-level": 2,
+        "segment": "Health & Sports"
+    },
+    {
+        "name": "Such a Baller",
+        "address": "Brigadeiro Faria Lima Avenue, 1000 - São Paulo, SP, 01452-000",
+        "phone-number": "(11) 0000-6789",
+        "website": "https://suchaballer.com.br",
+        "icon":"baller.png",
+        "membership-level": 3,
+        "segment": "Sports Store"
+    },
+    {
+        "name": "Travel Planned",
+        "address": "Travel Street, 200 - São Paulo, SP, 01234-000",
+        "phone-number": "(11) 0000-3456",
+        "website": "https://techhaven.com.br",
+        "icon":"travel.png",
+        "membership-level": 1,
+        "segment": "Travels & Tourism"
+    }
+]
