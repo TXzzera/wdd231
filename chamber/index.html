@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Bruno de Sousa Teixeira">
+  <meta name="description" content="São Paulo Chamber of Commerce home page">
+  
+  <meta property="og:title" content="São Paulo Chamber home page"/>
+  <meta property="og:description" content="São Paulo Chamber of Commerce home page"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://txzzera.github.io/wdd231/chamber/directory.html"/> 
+  <meta property="og:image" content="https://txzzera.github.io/wdd231/chamber/images/logo.webp"/>
+
+  <title>Home Page | São Paulo Chamber of Commerce</title>
+  <link href="styles/index.css" rel="stylesheet">
+  <link rel="icon" href="images/favicon-logo.webp" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik&display=swap" rel="stylesheet">
+  <script src="scripts/index.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+          <img src="images/favicon-logo.jpg" alt="chamber_logo">
+          <div class="title">
+            <h1>São Paulo </h1>
+            <p>Chamber of Commerce</p>
+          </div>
+          <button id="menu-toggle" class="menu-button">&#9776;</button>
+          <nav id="menu">
+            <a href="">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+          </nav>
+        </div>
+    </header>
+    <main>
+      <section id="hero">
+        <div id="hero-image">
+          <img src="images/saopaulo.jpg" alt="The city of São Paulo">
+          <div class="hero-content">
+            <h2>Growing your business in São Paulo </h2>
+            <p>The opportunities of tomorrow are here.</p>
+            <a href="join.html" class="button">Take this chance now!</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="current-events">
+        <div class="title-box">
+          <h3>Current Event</h3>
+          <img src="images/schedule.svg" alt="Calendar icon of events">
+        </div>
+        <div class="event">
+          <h4>São Paulo Business Expo 2025</h4>
+          <p>Join us for the largest business expo in São Paulo, showcasing the latest innovations and networking opportunities.</p>
+          <p>Date: November 15-17, 2025</p>
+          <p>Location: Anhembi Convention Center</p>
+          <a href="discover.html" class="button">Discover More</a>
+        </div>
+      </section>
+
+      <section id="weather">
+        <div class="title-box">
+          <h3>Current Weather</h3>
+          <img src="images/weather.svg" alt="Weather icon of São Paulo">
+        </div>
+        <div class= "weather-content">
+          <div class="weather-info">
+            <p id="weather-description">Loading...</p>
+            <p id="humidity">Loading...</p>
+            <p id="wind-speed">Loading...</p>
+          </div>
+          <div class="forecast"></div>
+        </div>
+      </section>
+
+      <section id="spotlights">
+        <div class= "title-box">
+          <h3>Top Members</h3>
+          <img src="images/trophy.svg" alt="trophy icon to top members">
+        </div>
+        <div class = "spotlight-members"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contact_information">
+        <h4>Contact Us</h4>
+        <p>Paulista Avenue, 123</p>
+        <p>São Paulo, SP, 01310-100</p>
+        <p><a href="mailto:contact@spchambcommerce.org">E-mail</a></p>
+        <p>+55 11 1234-5678</p>
+      </div>
+      <div class="social_media">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/spchamber" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+        <a href="https://www.x.com/spchamber" target="_blank"><img src="images/x.jpeg" alt="x"></a>
+        <a href="https://www.instagram.com/spchamber" target="_blank"><img src="images/instagram.jpeg" alt="instagram"></a>
+      </div>
+      <div class="dev">
+        <h3>Developed by</h3>
+        <p id="currentYear"></p>
+        <p>WDD 231 Project</p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+</body>
+</html>
