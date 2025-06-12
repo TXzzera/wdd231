@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Bruno de Sousa Teixeira">
+  <meta name="description" content="Join page of São Paulo Chamber of Commerce. ">
+  
+  <meta property="og:title" content="São Paulo Chamber home page"/>
+  <meta property="og:description" content="Join page of São Paulo Chamber of Commerce" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://txzzera.github.io/wdd231/chamber/join.html"/> 
+  <meta property="og:image" content="https://txzzera.github.io/wdd231/chamber/images/logo.webp"/>
+
+  <title>São Paulo Chamber of Commerce | Join Page </title>
+  <link href="styles/join.css" rel="stylesheet">
+  <link rel="icon" href="images/favicon-logo.webp" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik&display=swap" rel="stylesheet">
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+      <div>
+        <img src="images/favicon-logo.jpg" alt="São Paulo Chamber of Commerce logo" />
+        <div class="title">
+          <h1>São Paulo</h1>
+          <p>Chamber of Commerce</p>
+        </div>
+        <button 
+          id="menu-toggle" 
+          class="menu-button" 
+          aria-label="Toggle menu navigation"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          &#9776;
+        </button>
+        <nav id="menu" role="navigation" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="discover.html">Discover</a>
+          <a href="directory.html">Directory</a>
+          <a class="active-link" href="#" aria-current="page">Join</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="join-section">
+        <h2>Become a Member</h2>
+      
+
+        <form id="join-form" action="https://txzzera.github.io/wdd231/chamber/thankyou.html" method="post">
+          
+          <fieldset>
+            <legend>Membership Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required autocomplete="on" title="The first name member">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required autocomplete="on" title="The last name member">
+
+            <label for="apptitle">Applicant Title:</label>
+            <input type="text" id="apptitle" name="apptitle" required autocomplete="on" title="Organization title of the company" pattern="[A-ZA-z]{2,}+(\-).{7,}">
+          </fieldset>
+          
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="on" placeholder="Enter your e-mail address e.g: yourcompany@outlook.com">
+
+            <label for="phonenumber">Phone Number:</label>
+            <input type="tel" id="phonenumber" name="phonenumber" required autocomplete="on" placeholder="Enter your phone number e.g: +55 11 1234-5678" pattern="\+55\s\d{2}\s\d{4}-\d{4}" title="Phone number format: +55 11 1234-5678">
+          </fieldset>
+          
+          <fieldset>
+            <legend>Organization Information</legend>
+            <label for="orgname">Organization Name:</label>
+            <input type="text" id="orgname" name="orgname">
+
+            <label for="memblevel">Membership Level:
+               <select id="memblevel" name="memblevel" required>
+                  <option value="">Please Select</option>
+                  <option value="non-profit">NP Membership (Non-profit)</option>
+                  <option value="bronze">Bronze Membership</option>
+                  <option value="silver">Silver Membership</option>
+                  <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label for="description">Business Description:</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+          </fieldset>
+
+          <input type="hidden" id="timestamp" name="timestamp">
+          <button class = "button-style" type="submit">Submit Application</button>
+        </form>
+      </section>
+
+      <section id="membership-levels">
+        <h2>Membership Levels</h2>
+
+        <div class="np-card">
+          <h3 class ="np-title">NP Membership (Non-profit)</h3>
+          <a href="#np-modal" class="button-style">View Benefits</a>
+        </div>
+    
+        <div class="bronze-card">
+          <h3 class="bronze-title">Bronze Membership</h3>
+          <a href="#bronze-modal" class="button-style">View Benefits</a>
+        </div>
+    
+        <div class="silver-card">
+          <h3 class="silver-title">Silver Membership</h3>
+          <a href="#silver-modal" class="button-style">View Benefits</a>
+        </div>
+    
+        <div class="card gold-card">
+          <h3 class="gold-title">Gold Membership</h3>
+          <a href="#gold-modal" class="button-style">View Benefits</a>
+        </div>
+      </section>
+
+      <section id="membership-benefits">
+
+         <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 class="np-title">NP Membership Benefits</h3>
+                <ul>
+                    <li>Participation in community outreach programs</li>
+                    <li>Access to monthly nonprofit webinars</li>
+                    <li>Listing in local nonprofit directory</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 class="bronze-title">Bronze Membership Benefits</h3>
+                <ul>
+                    <li>All NP benefits plus:</li>
+                    <li>Invitations to biannual networking breakfasts</li>
+                    <li>Featured mention on the Chamber blog</li>
+                    <li>5% discount on Chamber workshops</li>
+                </ul>
+                <p class="price">Annual Fee: $100</p>
+            </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 class="silver-title">Silver Membership Benefits</h3>
+                <ul>
+                    <li>All Bronze benefits plus:</li>
+                    <li>Priority booth placement at Chamber fairs</li>
+                    <li>15% discount on Chamber workshops</li>
+                </ul>
+                <p class="price">Annual Fee: $250</p>
+            </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 class="gold-title">Gold Membership Benefits</h3>
+                <ul>
+                    <li>All Silver benefits plus:</li>
+                    <li>VIP event access</li>
+                    <li>Exclusive quarterly strategy sessions with Chamber leadership</li>
+                    <li>Exclusive spot on home page</li>
+                    <li>50% discount on Chamber workshops</li>
+                </ul>
+                <p class="price">Annual Fee: $500</p>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contact_information">
+        <h4>Contact Us</h4>
+        <p>Paulista Avenue, 123</p>
+        <p>São Paulo, SP, 01310-100</p>
+        <p><a href="mailto:contact@spchambcommerce.org" aria-label="Enviar email para São Paulo Chamber">contact@spchambcommerce.org</a></p>
+        <p>+55 11 1234-5678</p>
+      </div>
+      <div class="social_media">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/spchamber" target="_blank" rel="noopener noreferrer" aria-label="Facebook São Paulo Chamber">
+        <img src="images/facebook.png" alt="Facebook logo" />
+        </a>
+        <a href="https://www.x.com/spchamber" target="_blank" rel="noopener noreferrer" aria-label="X São Paulo Chamber">
+        <img src="images/x.jpeg" alt="X logo" />
+        </a>
+        <a href="https://www.instagram.com/spchamber" target="_blank" rel="noopener noreferrer" aria-label="Instagram São Paulo Chamber">
+        <img src="images/instagram.jpeg" alt="Instagram logo" />
+        </a>
+      </div>
+      <div class="dev">
+        <h3>Developed by</h3>
+        <p id="currentYear"></p>
+        <p>WDD 231 Project</p>
+        <p id="lastModified"></p>
+      </div>
+</footer>
+</body>
+</html>
