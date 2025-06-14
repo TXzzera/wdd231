@@ -54,7 +54,7 @@
         <h2>Become a Member</h2>
       
 
-        <form id="join-form" action="https://txzzera.github.io/wdd231/chamber/thankyou.html" method="post"></form>
+        <form id="join-form" action="https://txzzera.github.io/wdd231/chamber/thankyou.html" method="post">
           
           <fieldset>
             <legend>Membership Information</legend>
@@ -65,7 +65,8 @@
             <input type="text" id="lname" name="lname" required autocomplete="on" title="The last name member">
 
             <label for="apptitle">Applicant Title:</label>
-            <input type="text" id="apptitle" name="apptitle" required autocomplete="on" title="Organization title of the company" pattern="[A-ZA-z]{2,}+(\-).{7,}">
+            <input type="text" id="apptitle" name="apptitle" required autocomplete="on" title="Organization title of the company" pattern="^[A-Za-z]{2,}-.{7,}$"
+">
           </fieldset>
           
           <fieldset>
@@ -82,15 +83,15 @@
             <label for="orgname">Organization Name:</label>
             <input type="text" id="orgname" name="orgname">
 
-            <label for="memblevel">Membership Level:
-               <select id="memblevel" name="memblevel" required>
-                  <option value="">Please Select</option>
-                  <option value="non-profit">NP Membership (Non-profit)</option>
-                  <option value="bronze">Bronze Membership</option>
-                  <option value="silver">Silver Membership</option>
-                  <option value="gold">Gold Membership</option>
-                </select>
-            </label>
+            <label for="memblevel">Membership Level:</label>
+            <select id="memblevel" name="memblevel" required>
+              <option value="">Please Select</option>
+              <option value="non-profit">NP Membership (Non-profit)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+            
 
             <label for="description">Business Description:</label>
             <textarea id="description" name="description" rows="4"></textarea>
