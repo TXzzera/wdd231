@@ -169,7 +169,7 @@ textarea {
 
 .button-style:hover {
   transform: scale(1.1);
-  background-color: rgb(180, 45, 0); /* mais escuro ao hover */
+  background-color: rgb(180, 45, 0); 
 }
  
 #membership-levels .np-card,
@@ -319,7 +319,7 @@ footer .social_media img {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* garante que os cards se expandam */
+    align-items: stretch; 
   }
 
   #membership-levels h2 {
@@ -330,10 +330,10 @@ footer .social_media img {
   #membership-levels .bronze-card,
   #membership-levels .silver-card,
   #membership-levels .gold-card {
-    display: block !important;       /* força blocos */
-    width: 100% !important;          /* ocupa toda largura */
-    margin-bottom: 1rem;             /* separação vertical */
-    max-width: none !important;      /* evita limite lateral */
+    display: block !important;       
+    width: 100% !important;         
+    margin-bottom: 1rem;             
+    max-width: none !important;     
   }
 }
 
