@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Bruno de Sousa Teixeira">
+  <meta name="description" content="Cartola Tricks | Tips and Stats for Cartola Fantasy Football">
+
+  <meta property="og:title" content="Cartola Tricks - Tips and Stats"/>
+  <meta property="og:description" content="Get the best Cartola Fantasy Football tips and stats updated live!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://txzzera.github.io/wdd231/final_project.html"/> 
+  <meta property="og:image" content="images/logo.webp"/>
+
+  <title>Cartola Tricks | Fantasy Tips</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="images/cartola-tricks.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+  <div class="header-logo-text">
+    <img src="images/cartola-tricks.webp" alt="Cartola Tricks logo" />
+    <h1>Cartola Tricks</h1>
+  </div>
+
+  <button id="menu-toggle" class="menu-button" aria-label="Toggle menu navigation" aria-expanded="false" aria-controls="menu">&#9776;</button>
+
+  <nav id="menu" role="navigation" aria-label="Main navigation">
+    <a class="active-link" href="#" aria-current="page">Home</a>
+    <a href="#calendar">Calendar</a>
+    <a href="#players">Players</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+  <main>
+    <section id="telegram-link" class="highlight-section">
+      <h2>
+        <img src="images/telegram-icon.webp" alt="Telegram Icon" style="width:24px; height:24px; vertical-align:middle; margin-right:0.3rem;">
+        Join Our Tips Group
+      </h2>
+      <p>Get team suggestions and strategies from the best players!</p>
+      <a href="https://t.me/CartolaFC2024Dicas" target="_blank" class="button">Join Telegram Group</a>
+    </section>
+
+    <section id="market-status-section">
+      <div class="dual-box">
+        <div class="market-status">
+          <h3>📊 Market Status</h3>
+          <p id="market-status">Loading...</p>
+          <a href="https://t.me/CartolaFC2024Dicas" target="_blank">Best Picks & Community Tips</a>
+        </div>
+        <div class="match-calendar" id="calendar">
+          <h3>📅 Match Calendar</h3>
+          <label for="dayFilter">Filter by Day:</label>
+          <select id="dayFilter">
+            <option value="all">All Days</option>
+          </select>
+          <ul id="match-list" class="match-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="players" class="filter-section">
+      <h3>🔎 Filter Players by Club and Position</h3>
+      <div class="filters">
+        <label for="teamFilter">Filter by Team:</label>
+        <select id="teamFilter"></select>
+
+        <label for="positionFilter">Filter by Position:</label>
+        <select id="positionFilter"></select>
+      </div>
+      <div id="players-container" class="players-grid">Loading players...</div>
+    </section>
+
+    <div id="playerModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1" style="display:none;">
+      <div id="modalContent">
+        <button class="close-btn" aria-label="Close modal">&times;</button>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contact">
+    <div class="contact-info">
+      <h4>Contact Support</h4>
+      <p><a href="mailto:support@cartolatricks.com">support@cartolatricks.com</a></p>
+      <p>+55 11 95800-0000</p>
+    </div>
+    <div class="social-media">
+      <a href="https://instagram.com/cartolatricks" target="_blank"><img src="images/instagram.jpeg" alt="Instagram"></a>
+      <a href="https://x.com/cartolatricks" target="_blank"><img src="images/x.jpeg" alt="Twitter"></a>
+    </div>
+    <div class="credits">
+      <p>&copy; <span id="currentYear"></span> Cartola Tricks | WDD Project</p>
+      <p><a href="https://youtu.be/W2RY9b3Iabw" target="_blank">Watch how this site was made (JavaScript features explained)</a></p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

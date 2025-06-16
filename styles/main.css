@@ -1,0 +1,326 @@
+/* === GLOBAL === */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: orangered;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: rgb(9, 98, 128);
+}
+
+h1, h2, h3 {
+  color: rgb(9, 98, 128);
+}
+
+button, .button {
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: #cc3300;
+}
+
+/* === HEADER === */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo-text {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+
+.header-logo-text img {
+  height: 48px;
+  width: auto;
+}
+
+
+.header-logo-text h1 {
+  color: #fff !important;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.menu-button {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* === MODAL === */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#modalContent {
+  background: white;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.match-calendar label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+  color: rgb(9, 98, 128);
+}
+
+.match-calendar select#dayFilter {
+  width: 100%;
+  max-width: 250px;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  border: 1.5px solid rgb(9, 98, 128);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.match-calendar select#dayFilter:hover,
+.match-calendar select#dayFilter:focus {
+  border-color: orangered;
+  outline: none;
+}
+
+.match-list {
+  list-style: none;
+  padding-left: 0;
+  max-height: 350px;
+  overflow-y: auto;
+  border: 1.5px solid rgb(9, 98, 128);
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(9, 98, 128, 0.1);
+}
+
+.match-list li {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+  color: #222;
+}
+
+.match-list li strong {
+  color: orangered;
+}
+
+.match-list li:last-child {
+  border-bottom: none;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: orangered;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: rgb(9, 98, 128);
+}
+
+/* === HAMBURGUER MOBILE === */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem 0;
+  }
+
+  nav.menu {
+    display: flex;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+.match-days-container {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .match-day {
+    margin-bottom: 2rem;
+  }}
+
+
+section {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.telegram-img {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 1rem auto;
+}
+
+.player-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+  transform: scale(1.03);
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.filters select {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+footer .contact-info,
+footer .social-media,
+footer .credits {
+  flex: 1;
+  min-width: 200px;
+}
+
+footer .contact-info {
+  text-align: left;
+}
+
+footer .social-media {
+  text-align: center;
+}
+
+footer .credits {
+  text-align: right;
+}
+
+footer a {
+  color: orangered;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer .social-media img {
+  width: 32px;
+  height: 32px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+footer .social-media img:hover {
+  transform: scale(1.2);
+}
+
+/* === MEDIA QUERIES === */
+@media (max-width: 600px) {
+  .players-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .contact-info,
+  footer .social-media,
+  footer .credits {
+    text-align: center;
+  }
+}
+
