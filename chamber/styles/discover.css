@@ -188,6 +188,11 @@ footer a {
   text-decoration: none;
 }
 
+footer a:hover {
+  color: orangered;
+  transition: color 0.3s ease;
+}
+
 footer .social_media img {
   width: 40px;
   height: 30px;
@@ -236,8 +241,15 @@ footer .social_media img {
 
   footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+
+  footer > div {
+    flex: 1;
+    margin: 1rem;
   }
 }
 @media screen and (min-width: 1025px) {
