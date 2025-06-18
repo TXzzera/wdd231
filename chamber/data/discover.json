@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Museu de Arte de São Paulo (MASP)",
+    "imagesrc": "images/masp.webp",
+    "imagealt": "Art Museum of São Paulo",
+    "address": "Avenida Paulista, 1578, Bela Vista, São Paulo, SP, CEP: 01310-200",
+    "description": "The Museu de Arte de São Paulo (MASP) is a renowned art museum, known for its impressive collection of Western art and its iconic modernist architecture.",
+    "link": "https://www.masp.com.br/"
+    },
+    {
+    "name": "Mercado Municipal de São Paulo",
+    "imagesrc": "images/mercadoSP.webp",
+    "imagealt": "Municipal Market of São Paulo",
+    "address": "R. da Cantareira, 306 - Centro Histórico de São Paulo, São Paulo - SP, 01024-900",
+    "description": "The Mercado Municipal de São Paulo, also known as Mercadão, is a famous market in the city, celebrated for its diverse food offerings, including the iconic mortadella sandwich and fresh produce.",
+    "link": "https://www.mercadomunicipalsp.com/"
+    },
+    {
+    "name": "Parque Ibirapuera",
+    "imagesrc": "images/ibirapuera.webp",
+    "imagealt": "Ibirapuera Park",
+    "address": "Av. Pedro Álvares Cabral, s/n - Vila Mariana, São Paulo - SP, 04094-050",
+    "description": "Parque Ibirapuera is one of the largest urban parks in Brazil, offering a vast green space for recreation, cultural institutions, and beautiful landscapes, making it a popular destination for both locals and tourists.",
+    "link": "https://www.parquedoibirapuera.org/"
+    },
+    {
+    "name": " Bairro da Liberdade",
+    "imagesrc": "images/liberdade.webp",
+    "imagealt": "Liberdade Neighborhood",
+    "address": "Liberdade, São Paulo - SP, 01502-001",
+    "description": "Liberdade is a vibrant neighborhood in São Paulo known for its rich Japanese heritage, featuring Asian markets, restaurants, and cultural festivals, making it a unique cultural hub in the city.",
+    "link": "https://visitesaopaulo.com/blog-liberdade/"
+    },
+    {
+    "name": "Zoológico de São Paulo",
+    "imagesrc": "images/zooSP.webp",
+    "imagealt": "São Paulo Zoo",
+    "address": "Avenida Miguel Estéfano, 4241; Cursino, São Paulo, Brasil",
+    "description": "The São Paulo Zoo is one of the largest zoos in Brazil, home to a diverse range of animal species and dedicated to conservation and education, providing an engaging experience for visitors of all ages.",
+    "link": "https://zoologico.com.br/en"
+    },
+    {
+    "name": "Catedral da Sé",
+    "imagesrc": "images/catedral.webp",
+    "imagealt": "Sé Cathedral",
+    "address": "Praça da Sé - Sé, São Paulo - SP, 01001-000",
+    "description": "The Catedral da Sé, also known as the Metropolitan Cathedral of São Paulo, is a stunning neo-Gothic cathedral located in the heart of the city, renowned for its impressive architecture and historical significance.",
+    "link": "https://arquisp.org.br/catedral-da-se/"
+    },
+    {
+    "name": "Estádio do Morumbi",
+    "imagesrc": "images/morumbi.webp",
+    "imagealt": "Morumbi Stadium",
+    "address": "Praça Roberto Gomes Pedrosa, 1 - Morumbi, São Paulo - SP, 05653-070",
+    "description": "Estádio do Morumbi is a prominent football stadium in São Paulo, home to São Paulo FC, and known for hosting major sporting events and concerts, offering a vibrant atmosphere for sports fans.",
+    "link": "https://www.estadiodomorumbi.com.br/"
+    },
+    {
+    "name": "Estádio do Pacaembu",
+    "imagesrc": "images/pacaembu.webp",
+    "imagealt": "Pacaembu Stadium",
+    "address": "R. Capivari - Pacaembu, São Paulo - SP, 01246-020",
+    "description": "Estádio do Pacaembu is a historic football stadium in São Paulo, known for its unique architecture and cultural significance, often hosting football matches, concerts, and other events.",
+    "link": "https://www.estadiodopacaembu.com.br/"
+    }   
+]

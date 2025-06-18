@@ -1,0 +1,291 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f0f0f0;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(9, 98, 128);
+  margin: 0;
+  gap: 1.5rem;}
+
+
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #fff;
+}
+.title {
+  flex-grow: 1;
+}
+
+.title h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.menu-button {
+  font-size: 1.5rem;
+  align-items: end;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+nav {
+  display: none;
+  align-items: end;
+  flex-direction: column;
+  background-color: rgb(9, 98, 128);
+  padding: 1rem;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+  padding: 0.5rem 0;
+  transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+nav a.active {
+  opacity: 1;
+  border-bottom: 2px solid #fff;
+}
+
+nav.show {
+  display: flex;
+}
+
+/* Main */
+main {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1400px;
+  background-color: white;
+  color: #000;
+}
+
+.places_list {
+  margin-bottom: 2rem;
+}
+
+.places_list h2 {
+  text-align: center;
+  background-color: rgb(9, 98, 128);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  margin: 1rem auto;
+}
+.place_card {
+  background-color: rgb(9, 98, 128);
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  min-height: 350px;
+}
+
+.place_card p {
+  background-color: #f9f9f9;
+  color: orangered ;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.place_card h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.place_card img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 1rem;
+  filter: none !important;
+  mix-blend-mode: normal;
+}
+
+.place_card a {
+  color: orangered;
+  text-decoration: none;
+}
+
+.place_card a:hover{
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+
+p.place_description {
+  color: #fff;
+  background: transparent;
+  font-weight: bold;
+  padding: 0;               /* Remove qualquer espaço interno extra */
+  margin: 0.5rem 0;         /* Espaçamento vertical leve */
+  font-weight: bold;
+  border: none;             /* Caso esteja herdando bordas */
+  box-shadow: none;
+}
+
+.cards_container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(9, 98, 128);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer h3 {
+  margin-bottom: 0.5rem;
+}
+
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .social_media img {
+  width: 40px;
+  height: 30px;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+   nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(9, 98, 128);
+    margin-top: 1rem;
+    margin-left: 90px;
+    padding: 0; 
+    gap:1rem;
+    width: auto;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+
+  .cards_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1025px) {
+
+  .header-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .menu-button {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(9, 98, 128);
+    margin-top: 1rem;
+    padding: 0; 
+    gap:1rem;
+    width: auto;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+
+  .cards_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+
+  footer > div {
+    flex: 1;
+    margin: 1rem;
+  }
+}

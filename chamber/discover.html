@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Bruno de Sousa Teixeira">
-  <meta name="description" content="São Paulo Chamber of Commerce Directory">
+  <meta name="description" content="São Paulo Chamber of Commerce | Discover the city">
   
-  <meta property="og:title" content="São Paulo Chamber Directory"/>
-  <meta property="og:description" content="São Paulo Chamber of Commerce Directory"/>
+  <meta property="og:title" content="São Paulo Chamber of Commerce: Discover"/>
+  <meta property="og:description" content="São Paulo Chamber of Commerce | Discover the city"/>
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://txzzera.github.io/wdd231/chamber/directory.html"/> 
+  <meta property="og:url" content="https://txzzera.github.io/wdd231/chamber/discover.html"/> 
   <meta property="og:image" content="https://txzzera.github.io/wdd231/chamber/images/logo.webp"/>
 
-  <title>São Paulo Chamber Directory </title>
-  <link href="styles/directory.css" rel="stylesheet">
+  <title>São Paulo Chamber of Commerce: Discover </title>
+  <link href="styles/discover.css" rel="stylesheet">
   <link rel="icon" href="images/favicon-logo.webp" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik&display=swap" rel="stylesheet">
-  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/navigation.js" defer></script>
 </head>
@@ -27,29 +27,28 @@
         <div>
           <img src="images/favicon-logo.jpg" alt="chamber_logo">
           <div class="title">
-            <h1>São Paulo <br> 
+             <h1>São Paulo <br> 
             Chamber of Commerce
             </h1>
-            
           </div>
           <button id="menu-toggle" class="menu-button">&#9776;</button>
           <nav id="menu">
             <a href="index.html">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="">Directory</a>
+            <a class="active-link" href="#" aria-current="page">Discover</a>
+            <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
           </nav>
         </div>
     </header>
     <main>
-      <section class="members_list">
-        <h2>Members List</h2>
-        <div class="members_cards"></div>
+      <section class="places_list">
+        <h2>Discover what's waiting for you!</h2>
+        <div class="cards_container"></div>
       </section> 
     </main>
     <footer>
       <div class="contact_information">
-        <h3>Contact Us</h3>
+        <h4>Contact Us</h4>
         <p>Paulista Avenue, 123</p>
         <p>São Paulo, SP, 01310-100</p>
         <p><a href="mailto:contact@spchambcommerce.org">E-mail</a></p>
@@ -57,9 +56,15 @@
       </div>
       <div class="social_media">
         <h3>Follow Us</h3>
-        <a href="https://www.facebook.com/spchamber" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
-        <a href="https://www.x.com/spchamber" target="_blank"><img src="images/x.jpeg" alt="x"></a>
-        <a href="https://www.instagram.com/spchamber" target="_blank"><img src="images/instagram.jpeg" alt="instagram"></a>
+        <a href="https://www.facebook.com/spchamber" target="_blank" rel="noopener noreferrer" aria-label="Facebook São Paulo Chamber">
+        <img src="images/facebook.png" alt="Facebook logo" />
+        </a>
+        <a href="https://www.x.com/spchamber" target="_blank" rel="noopener noreferrer" aria-label="X São Paulo Chamber">
+        <img src="images/x.jpeg" alt="X logo" />
+        </a>
+        <a href="https://www.instagram.com/spchamber" target="_blank" rel="noopener noreferrer" aria-label="Instagram São Paulo Chamber">
+        <img src="images/instagram.jpeg" alt="Instagram logo" />
+        </a>
       </div>
       <div class="dev">
         <h3>Developed by</h3>
